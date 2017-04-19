@@ -10,7 +10,7 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 ENV XDG_CONFIG_HOME="/config/xdg"
 
 # package versions
-ARG SONARR_BRANCH="master"
+ARG SONARR_BRANCH="develop"
 
 # install sonarr
 RUN \
