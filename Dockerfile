@@ -12,7 +12,7 @@ ENV XDG_CONFIG_HOME="/config/xdg"
 # package versions
 ARG SONARR_BRANCH="master"
 
-#Âinstall sonarr
+# install sonarr
 RUN \
  mkdir -p \
 	/opt/NzbDrone && \
