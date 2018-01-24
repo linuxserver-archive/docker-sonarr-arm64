@@ -86,4 +86,5 @@ Access the webui at `<your-ip>:8989`, for more information check out [Sonarr](ht
 
 ## Versions
 
++ **24.01.18:** Fix continuation lines.
 + **19.04.16:** Initial Release.

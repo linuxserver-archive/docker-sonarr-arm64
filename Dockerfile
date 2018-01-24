@@ -1,10 +1,10 @@
 FROM lsiobase/mono.arm64
-MAINTAINER sparklyballs
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="sparklyballs"
 
 # set environment variables
 ENV XDG_CONFIG_HOME="/config/xdg"
@@ -12,8 +12,8 @@ ENV XDG_CONFIG_HOME="/config/xdg"
 # package versions
 ARG SONARR_BRANCH="master"
 
-# install sonarr
 RUN \
+ echo "**** install sonarr ****" && \
  mkdir -p \
 	/opt/NzbDrone && \
  curl -o \
@@ -22,8 +22,7 @@ RUN \
  tar xf \
  /tmp/sonarr.tar.gz -C \
 	/opt/NzbDrone --strip-components=1 && \
-
-# cleanup
+ echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
 
