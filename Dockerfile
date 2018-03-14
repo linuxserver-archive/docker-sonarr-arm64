@@ -1,4 +1,4 @@
-FROM lsiobase/mono.arm64
+FROM lsiobase/ubuntu.armhf:xenial
 
 # set version label
 ARG BUILD_DATE
