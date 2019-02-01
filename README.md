@@ -5,6 +5,8 @@
 [appurl]: https://sonarr.tv/
 [hub]: https://hub.docker.com/r/lsioarmhf/sonarr-aarch64/
 
+THIS IMAGE IS DEPRECATED. PLEASE USE THE MULTI-ARCH IMAGES AT `linuxserver/sonarr`
+
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
 The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
@@ -86,5 +88,6 @@ Access the webui at `<your-ip>:8989`, for more information check out [Sonarr](ht
 
 ## Versions
 
++ **01.02.19:** This image is deprecated. Please use the multi-arch images at linuxserver/sonarr
 + **24.01.18:** Fix continuation lines.
 + **19.04.16:** Initial Release.
